@@ -4,6 +4,8 @@
 package com.app.algorithms;
 
 /**
+ * Time Complexity
+ * 	Best - O(n)
  * @author akanippayyur
  *
  */
