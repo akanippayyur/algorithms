@@ -33,6 +33,7 @@ public class MergeSort {
 	private void split(int[] input, int index, int length) {
 		System.out.println("Low: " + index + "High: " + length);
 		if (index < length) {
+
 			int midIndx = index + (length - index) / 2;
 
 			split(input, index, midIndx);
