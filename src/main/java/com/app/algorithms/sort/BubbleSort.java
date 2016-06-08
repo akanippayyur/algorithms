@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.app.algorithms;
+package com.app.algorithms.sort;
 
 /**
  * Time Complexity

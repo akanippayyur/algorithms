@@ -40,6 +40,16 @@ class Node {
 		tailNode.next = node;
 	}
 
+	/**
+	 * Set the value of the node next to the current node to the current node
+	 * @param currentNodeToBeDeleted
+	 */
+	public void deleteNode(Node currentNodeToBeDeleted) {
+		Node tmpNode = currentNodeToBeDeleted.next;
+		currentNodeToBeDeleted.val = tmpNode.val;
+		currentNodeToBeDeleted.next = tmpNode.next;
+	}
+
 	public Node deleteNode(int val, Node head) {
 		Node node = head;
 		boolean isFound = false;
