@@ -10,5 +10,7 @@ For example,the program should print true for exp = “[()]{}{[()()]()}” and false
 
 
 ## Linked Lists ##
-	1. ### Creating and deleting nodes from a linked list ###
-	2. ### Merge two sorted Linked lists ###
+	### 
+		1. Creating and deleting nodes from a linked list 
+		2.Merge two sorted Linked lists 
+	###
