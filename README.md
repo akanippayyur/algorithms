@@ -1,6 +1,9 @@
 # Algorithms: #
 
-
+## Tree ##
+		1. Balanced Binary search tree and height.
+		2. Check if a tree is a BST.
+		
 ## Search ##
 		1. BinarySearch
 		2. BreadthFirstSearch
