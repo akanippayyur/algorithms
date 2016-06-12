@@ -1,4 +1,4 @@
-package com.app.algorithms;
+package com.app.algorithms.misc;
 
 /**
  * Given a number having only one ‘1’ and all other ’0’s in its binary
