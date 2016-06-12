@@ -13,6 +13,8 @@ public class LinkedList {
 		node.add(20);
 		node.add(30);
 
+		node.print();
+		
 		node.deleteNode(20, node);
 	}
 }
@@ -27,6 +29,14 @@ class Node {
 
 	public Node(int val) {
 		this.val = val;
+	}
+	
+	void print() {
+		Node tailNodes = this;
+		while(tailNodes != null) {
+			System.out.println(tailNodes.val);
+			tailNodes = tailNodes.next;
+		}
 	}
 
 	public void add(int val) {

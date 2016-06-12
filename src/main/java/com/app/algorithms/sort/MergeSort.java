@@ -4,6 +4,10 @@
 package com.app.algorithms.sort;
 
 /**
+ * Some Good tutorials:
+ * https://www.youtube.com/watch?v=EeQ8pwjQxTM
+ * http://www.geeksforgeeks.org/merge-sort-for-linked-list/
+ * 
  * @author akanippayyur
  */
 public class MergeSort {
