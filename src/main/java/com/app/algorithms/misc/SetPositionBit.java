@@ -27,6 +27,7 @@ public class SetPositionBit {
 
 	private static int convertToBinary(int parseInt) {
 		int count = 0;
+		
 		while(parseInt != 1) {
 			if((parseInt % 2) == 1) {
 				count++;

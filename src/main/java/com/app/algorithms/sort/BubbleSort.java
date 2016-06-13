@@ -5,7 +5,13 @@ package com.app.algorithms.sort;
 
 /**
  * Time Complexity
- * 	Best - O(n)
+ * Best	Average	Worst
+ * O(n)	O(n^2)	O(n^2)
+ * 
+ * Space Complexity
+ * Worst
+ * O(1)
+ * 
  * @author akanippayyur
  *
  */
