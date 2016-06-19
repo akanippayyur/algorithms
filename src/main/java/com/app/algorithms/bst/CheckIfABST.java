@@ -7,6 +7,7 @@ import com.app.algorithms.search.Node;
 
 /**
  * Checks if the given tree is a Binary Search Tree
+ * O(n)
  * @author akanippayyur
  */
 public class CheckIfABST {
@@ -21,13 +22,13 @@ public class CheckIfABST {
 		 * any node which is less than the immediate parent and greater than the
 		 * grandparent node
 		 * 
-		 * 			  30
-		 * 		20			60
-		 * 10		100	20		90
+		 * 30 20 60 10 100 20 90
 		 * 
-		 *  Even though 100 is greater than 20, that node needs to be less than 30 in order to become a BST
+		 * Even though 100 is greater than 20, that node needs to be less than
+		 * 30 in order to become a BST
 		 */
-		if (node.value > minVal && isABST(node.left, minVal, Math.min(node.left.value, maxVal))) {
+		if (node.value > minVal
+				&& isABST(node.left, minVal, Math.min(node.left.value, maxVal))) {
 			return true;
 		}
 
@@ -36,16 +37,28 @@ public class CheckIfABST {
 		 * any node which is less than the immediate parent and less than the
 		 * grandparent node
 		 * 
-		 * 			  30
-		 * 		20			60
-		 * 10		100	20		90
+		 * 30 20 60 10 100 20 90
 		 * 
-		 *  Even though 20 is greater than 60, that node need to be greater than 30 in order to become a BST
+		 * Even though 20 is greater than 60, that node need to be greater than
+		 * 30 in order to become a BST
 		 */
-		if (node.value > maxVal && isABST(node.right, Math.max(node.right.value, minVal), maxVal)) {
+		if (node.value > maxVal
+				&& isABST(node.right, Math.max(node.right.value, minVal),
+						maxVal)) {
 			return true;
 		}
 
 		return false;
+	}
+
+	private boolean isValidBST(Node node, int MIN, int MAX) {
+		if (node == null)
+			return true;
+		if (node.value > MIN && node.value < MAX
+				&& isValidBST(node.left, MIN, node.value)
+				&& isValidBST(node.right, node.value, MAX))
+			return true;
+		else
+			return false;
 	}
 }
