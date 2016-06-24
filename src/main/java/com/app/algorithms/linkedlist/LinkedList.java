@@ -2,6 +2,7 @@ package com.app.algorithms.linkedlist;
 
 /**
  * Custom Implementation for a Linked List
+ * Ref: http://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/
  * 
  * @author Anoop
  */
@@ -12,10 +13,16 @@ public class LinkedList {
 		node.add(10);
 		node.add(20);
 		node.add(30);
-
-		node.print();
+		node.add(60);
+		node.add(70);
+		node.add(100);
+		node.add(120);
 		
-		node.deleteNode(20, node);
+		node.print();
+
+		//node.deleteNode(20, node);
+
+		node.findMiddleNode();
 	}
 }
 
@@ -30,10 +37,10 @@ class Node {
 	public Node(int val) {
 		this.val = val;
 	}
-	
+
 	void print() {
 		Node tailNodes = this;
-		while(tailNodes != null) {
+		while (tailNodes != null) {
 			System.out.println(tailNodes.val);
 			tailNodes = tailNodes.next;
 		}
@@ -52,6 +59,7 @@ class Node {
 
 	/**
 	 * Set the value of the node next to the current node to the current node
+	 * 
 	 * @param currentNodeToBeDeleted
 	 */
 	public void deleteNode(Node currentNodeToBeDeleted) {
@@ -83,5 +91,22 @@ class Node {
 
 		System.out.println(isFound);
 		return head;
+	}
+
+	public void findMiddleNode() {
+		Node head = this;
+		Node mid = this;
+
+		int count = 0;
+		while (head.next != null) {
+			count++;
+			if (count % 2 != 0) {
+				mid = mid.next;
+			}
+			
+			head = head.next;
+		}
+		
+		System.out.println("Mid: "+mid.val+" Count: "+count);
 	}
 }
