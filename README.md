@@ -14,4 +14,6 @@
 ## Misc ##
 
 		1. Balanced Parenthesis: Given an expression string exp, write a program to examine whether the pairs 
-		   and the orders of “{“,”}”,”(“,”)”,”[“,”]” are correct in exp.
+		   and the orders of ï¿½{ï¿½,ï¿½}ï¿½,ï¿½(ï¿½,ï¿½)ï¿½,ï¿½[ï¿½,ï¿½]ï¿½ are correct in exp.
+        2. Permutation: Given P(n,r), find all the permutations of n,r. P(n,r) where: P(n,r) = n! / (n - r)!
+		   
