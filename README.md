@@ -17,3 +17,9 @@
 		   and the orders of �{�,�}�,�(�,�)�,�[�,�]� are correct in exp.
         2. Permutation: Given P(n,r), find all the permutations of n,r. P(n,r) where: P(n,r) = n! / (n - r)!
 		3. Combinations: Given C(n,r), find all the combinations of n,r. C(n,r) where: C(n,r) = n!/(r! * (n-r)!)   
+		
+		
+# Design Patterns: #
+
+## Singleton Pattern ##
+    There are two implementations of this pattern provided.
